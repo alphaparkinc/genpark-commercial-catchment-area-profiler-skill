@@ -1,0 +1,42 @@
+{
+  "name": "genpark-commercial-catchment-area-profiler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Retail commercial trade catchment area profiler computing daytime foot-traffic density and store cannibalization risk.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "geospatial",
+  "tags": [
+    "commercial-catchment",
+    "retail-site-selection",
+    "foot-traffic",
+    "carto",
+    "gis"
+  ],
+  "inputs": {
+    "store_id": {
+      "type": "string"
+    },
+    "store_lat": {
+      "type": "number"
+    },
+    "store_lng": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "profiling_id": {
+      "type": "string"
+    },
+    "commercial_viability_score": {
+      "type": "number"
+    },
+    "cannibalization_risk_pct": {
+      "type": "number"
+    },
+    "catchment_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
